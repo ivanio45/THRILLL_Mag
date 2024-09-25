@@ -44,7 +44,7 @@ public class ShopBot extends TelegramLongPollingBot {
 
     @Override
     public String getBotToken() {
-        return "7335356805:AAHxxc5ZM3K7aPCDGiU1sT_ra9m88tY2fAk"; // Укажите токен вашего бота
+        return ""; // Укажите токен вашего бота
     }
 
     @Override
