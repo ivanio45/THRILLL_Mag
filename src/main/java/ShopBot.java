@@ -20,7 +20,6 @@ public class ShopBot extends TelegramLongPollingBot {
     private final List<String> cart = new ArrayList<>();
 
     public ShopBot() {
-        // Добавим несколько товаров в магазин
         Allproducts.add("1. Товар A - $10");
         Allproducts.add("2. Товар B - $20");
         Allproducts.add("3. Товар C - $30");
@@ -39,12 +38,12 @@ public class ShopBot extends TelegramLongPollingBot {
 
     @Override
     public String getBotUsername() {
-        return "SVmag"; // Укажите имя вашего бота
+        return "SVmag";
     }
 
     @Override
     public String getBotToken() {
-        return ""; // Укажите токен вашего бота
+        return "";
     }
 
     @Override
@@ -101,7 +100,6 @@ public class ShopBot extends TelegramLongPollingBot {
         keyboardMarkup.setOneTimeKeyboard(false);
 
 
-        // Создаем строки клавиатуры
         List<KeyboardRow> keyboard = new ArrayList<>();
         KeyboardRow row = new KeyboardRow();
 
@@ -124,7 +122,6 @@ public class ShopBot extends TelegramLongPollingBot {
 
 
 
-        // Устанавливаем клавиатуру
         keyboardMarkup.setKeyboard(keyboard);
 
         SendMessage message = new SendMessage();
@@ -147,7 +144,6 @@ public class ShopBot extends TelegramLongPollingBot {
         keyboardMarkup.setOneTimeKeyboard(false);
 
 
-        // Создаем строки клавиатуры
         List<KeyboardRow> keyboard = new ArrayList<>();
         KeyboardRow row = new KeyboardRow();
 
@@ -159,7 +155,7 @@ public class ShopBot extends TelegramLongPollingBot {
         row.add(new KeyboardButton("корзина"));
         keyboard.add(row);
 
-        // Устанавливаем клавиатуру
+
         keyboardMarkup.setKeyboard(keyboard);
 
         SendMessage message = new SendMessage();
@@ -183,7 +179,6 @@ public class ShopBot extends TelegramLongPollingBot {
         keyboardMarkup.setOneTimeKeyboard(false);
 
 
-        // Создаем строки клавиатуры
         List<KeyboardRow> keyboard = new ArrayList<>();
         KeyboardRow row = new KeyboardRow();
 
@@ -196,7 +191,6 @@ public class ShopBot extends TelegramLongPollingBot {
         keyboard.add(row);
 
 
-        // Устанавливаем клавиатуру
         keyboardMarkup.setKeyboard(keyboard);
 
         SendMessage message = new SendMessage();
